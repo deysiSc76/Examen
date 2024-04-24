@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Just Dessert</title>
+</head>
+<body>
+    <div class="container">
+        <div class="encabezado">
+            <div><h1>Just <span>Dessert</span></h1></div>
+            <div class="botones">
+                <button onclick="hideButton(this)"  id="join">Join</button>
+                <button id="login">Login</button>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="nav-search">
+            <input type="text" id="buscar" placeholder="Search">
+            <button onclick="alert(mostrarMensaje())" id="go">Go</button>
+            </div>
+            <div class="nav-option">
+                <img class="navegacion" src="./imgs/cake.png" alt="imagen de un postres">
+                <p>Cakes</p>
+            </div>
+            <div class="nav-option">
+                <img class="navegacion" src="./imgs/ice-cream.png" alt="imagen de un postres">
+                <p>Ice Cream</p>
+            </div>
+            <div class="nav-option">
+                <img class="navegacion" src="./imgs/cookie.png" alt="imagen de un postres">
+                <p>Cookies</p>
+            </div>
+            <div class="nav-option">
+                <img class="navegacion" src="./imgs/pie.png" alt="imagen de un postres">
+                <p>Pies</p>
+            </div>
+
+        </div>
+        <div class="cuerpo">
+            <div class="columna1">
+                <div class="titulo">
+                    <h2>Recipe of the day</h2>
+                    <img id="receta" src="./imgs/orange-tart.jpg" alt="imagen de un postres">
+                </div>
+                <div class="pie">
+                    <div class="pieDeFoto">
+                        <p class="texto">Orange Jelly Tart</p>
+                        <a href="">yuripiano</a>
+                    </div>
+                    <div class="likes">
+                        <img onclick="aumentarLike()" class="corazon" src="./imgs/heart.png" alt="imagen de un corazon">
+                        <p id="cantidadLikes">68</p>
+                    </div>
+
+                </div>
+                <div class="see">
+                    <a href="">See full result</a>
+                </div>
+               
+            </div>
+            <div class="columna2">
+                <h4>Recommended for you: </h4>
+                <div class="publicacion">
+                    <img class="image" src="./imgs/macarons.jpg" alt="imagen de macarons">
+                    <div class="cuerpoImagen">
+                        <div class="pieDeimagen">
+                            <p class="texto">Macarons</p>
+                            <p class="texto">By: <a href="">EmilieW</a></p>
+                        </div>
+                        <div class="likes">
+                            <img onclick="aumentarLike2()" class="corazon" src="imgs/heart.png" alt="imagen de corazon">
+                            <p id="aumentarLike2">221</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="publicacion">
+                    <img class="image" src="./imgs/creme-brulee.jpg" alt="imagen de macarons">
+                    <div class="cuerpoImagen">
+                        <div class="pieDeimagen">
+                        
+                            <p class="texto">Crème Brûlée</p>
+                            <p class="texto">By: <a href="">EmilieW</a></p>
+                        </div>
+                        <div class="likes">
+                            <img onclick="aumentarLike3()" class="corazon" src="imgs/heart.png" alt="imagen de corazon">
+                            <p id="aumentarLike3">33</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+           
+        </div>
+
+    </div>
+    
+</body>
+</html>
